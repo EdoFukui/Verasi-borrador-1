@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Verasi Tarot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Verasi Tarot</h1>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <p class="lead">Lecturas honestas y profesionales para guiar tu camino.</p>
+        <a class="cta" href="#contacto">Pedir cita</a>
+      </div>
+    </section>
+
+    <section id="portafolio" class="container section">
+      <h2>Servicios</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Lectura de Tarot</h3>
+          <p>Lecturas presenciales o por videollamada (30–60 minutos).</p>
+        </article>
+        <article class="card">
+          <h3>Tirada de un día</h3>
+          <p>Lectura rápida para tomar decisiones puntuales.</p>
+        </article>
+        <article class="card">
+          <h3>Consulta espiritual</h3>
+          <p>Trabajo con cartas y recomendaciones prácticas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonios" class="container section">
+      <h2>Testimonios</h2>
+      <div class="testimonials">
+        <button class="prev" aria-label="Anterior">‹</button>
+        <ul id="testimonial-list" class="testimonial-list">
+          <li class="testimonial active">
+            <blockquote>"La lectura me dio claridad y tranquilidad. Muy profesional."</blockquote>
+            <cite>— Ana G.</cite>
+          </li>
+          <li class="testimonial">
+            <blockquote>"Recomendado: lenguaje claro y consejos útiles."</blockquote>
+            <cite>— Carlos M.</cite>
+          </li>
+          <li class="testimonial">
+            <blockquote>"Experiencia transformadora, gracias."</blockquote>
+            <cite>— Lucía R.</cite>
+          </li>
+        </ul>
+        <button class="next" aria-label="Siguiente">›</button>
+      </div>
+    </section>
+
+    <section id="contacto" class="container section">
+      <h2>Contacto</h2>
+      <form id="contact-form" class="contact-form" method="POST" action="https://formspree.io/f/yourFormId">
+        <label for="name">Nombre</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Correo</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+        <p class="form-note">O usa: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Verasi Tarot</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
